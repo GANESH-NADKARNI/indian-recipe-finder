@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Component -->
+        <div class="header">
+            <h1>🇮🇳 Indian Recipe Finder</h1>
+            <p>Discover authentic Indian recipes with your favorite ingredients</p>
+        </div>
+        
+        <!-- Search Component -->
+        <div class="search-section">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search by ingredient (e.g., paneer, dal, rice, chicken...)">
+            <select class="filter-select" id="cuisineFilter">
+                <option value="">All Cuisines</option>
+                <option value="North Indian">North Indian</option>
+                <option value="South Indian">South Indian</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Hyderabadi">Hyderabadi</option>
+                <option value="Kashmiri">Kashmiri</option>
+                <option value="Chaat">Chaat</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+        </div>
+        
+        <!-- Results Component -->
+        <div class="results-count" id="resultsCount"></div>
+        <div class="recipes-grid" id="recipesGrid"></div>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Recipe details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
