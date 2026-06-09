@@ -77,7 +77,7 @@ Displayed through an interactive modal window.
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/indian-recipe-finder.git
+git clone https://github.com/GANESH-NADKARNI/indian-recipe-finder.git
 ```
 
 ### Run the Application
